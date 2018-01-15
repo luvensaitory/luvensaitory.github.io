@@ -1,104 +1,58 @@
-<!DOCTYPE html>
-<html lang="ja">
-	<head>
-		<meta charset="utf-8" />
-		<title>sample</title>
-		<link rel="stylesheet" href="style.css" type="text/css" />
-		<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
-		<script type="text/javascript">
-			$(function(){
-				$("ul.subs").hide();
-				$("div.main").click(function(){
-					$("ul.subs").slideUp();
-					$("div.main").removeClass("open");
-					if($("+ul",this).css("display")=="none"){
-						$("+ul",this).slideDown();
-						$(this).addClass("open");
-					}
-				 s("rollover");
-				});
-			});
-		</script>
-	</head>
-	<body>
-		<div id="header">
-			<div id="header-inner">
-				<div id="logo">
-					<img src="images/logo.png" />
-				</div>
-				<ul id="header-nav">
-					<li><a href="test.html">
-						<img src="images/about.png" /></a></li>
-					<li><a href="test.html">
-						<img src="images/contact.png" /></a></li>
-					<li><a href="test.html">
-						<img src="images/sitemap.png" /></a></li>
-				</ul>
-			</div>
-		</div>
-		<div id="wrapper" class="clearfix">
-			<div id="nav">
-				<ul> 
-					<li class="color-blue">
-						<div class="main">網頁基本元件</div>
-						<ul class="subs"> 
-							<li><a href="./01網頁基本元件/001手風琴效果選單(可閉合)/index.html">001手風琴效果選單(可閉合)</a></li>
-							<li><a href="./01網頁基本元件/002下拉式選單(滑動特效)/index.html">002下拉式選單(滑動特效)</a></li>
-							<li><a href="./01網頁基本元件/003區塊選單/index.html">003區塊選單</a></li>
-							<li><a href="./01網頁基本元件/004固定式選單(瀏覽器上方)/index.html">004固定式選單(瀏覽器上方)</a></li>
-							<li><a href="./01網頁基本元件/005回首頁按鈕與平滑捲動效果/index.html">005回首頁按鈕與平滑捲動效果</a></li>
-							<li><a href="./01網頁基本元件/006利用jQuery製作banner動畫/index.html">006利用jQuery製作banner動畫</a></li>
-							<li><a href="./01網頁基本元件/007滑鼠移入圖片時的各種效果/index.html">007滑鼠移入圖片時的各種效果</a></li>
-						</ul> 
-					</li> 
-					<li class="color-red">
-						<div class="main">效果各異的網頁介面</div>
-						<ul class="subs"> 
-							<li><a href="./02效果各異的網頁介面/001效果豐富的頁籤面板/index.html">001效果豐富的頁籤面板</a></li> 
-							<li><a href="./02效果各異的網頁介面/002滑鼠移過時之訊息框/index.html">002滑鼠移過時之訊息框</a></li> 
-							<li><a href="./02效果各異的網頁介面/003側邊展開的滑動選單/index.html">003側邊展開的滑動選單</a></li> 
-							<li><a href="./02效果各異的網頁介面/004應用Mason ry無間隙排列內容/sample4_with_colorbox.html">004應用Mason ry無間隙排列內容</a></li> 
-							<li><a href="./02效果各異的網頁介面/005首頁SlideShow/index.html">005首頁SlideShow</a></li> 
-							<li><a href="./02效果各異的網頁介面/006對應多種裝置的相簿圖庫/index.html">006對應多種裝置的相簿圖庫</a></li> 
-							<li><a href="./02效果各異的網頁介面/007瀑布流網頁(逐步載入內容)/index.html">007瀑布流網頁(逐步載入內容)</a></li> 
-						</ul> 
-					</li>
-					<li class="color-yellow">
-						<div class="main">各式網站首頁</div>
-						<ul class="subs"> 
-							<li><a href="./03各式網站首頁/001網頁滿版背景/index_random.html">001網頁滿版背景</a></li> 
-							<li><a href="./03各式網站首頁/002播放滿版影片/index.html">002播放滿版影片</a></li> 
-							<li><a href="./03各式網站首頁/003載入中的動畫/index.html">003載入中的動畫</a></li> 
-							<li><a href="./03各式網站首頁/004從下滑入內容/index.html">004從下滑入內容</a></li> 
-							<li><a href="./03各式網站首頁/005橫向卷軸頁面/sample_layout.html">005橫向卷軸頁面</a></li> 
-							<li><a href="./03各式網站首頁/006照片輪播特效/index.html">006照片輪播特效</a></li> 
-							<li><a href="./03各式網站首頁/007超立體感動畫/index.html">007超立體感動畫</a></li> 
-							<li><a href="./03各式網站首頁/008單頁網站設計/index.html">008單頁網站設計</a></li> 
-						</ul> 
-					</li>
-					<li class="color-green">
-						<div class="main">高實用性設計</div>
-						<ul class="subs"> 
-							<li><a href="./04高實用性設計/001Gmap和資訊/index.html">001Gmap和資訊</a></li> 
-							<li><a href="./04高實用性設計/002聯絡我們表單/index.html">002聯絡我們表單</a></li> 
-							<li><a href="./04高實用性設計/003動態網頁表格/index.html">003動態網頁表格</a></li> 
-							<li><a href="./04高實用性設計/004多樣動態圖表/index.html">004多樣動態圖表</a></li> 
-							<li><a href="./04高實用性設計/005社群按鈕配置/index.html">005社群按鈕配置</a></li> 
-							<li><a href="./04高實用性設計/006依裝置載圖片/index.html">006依裝置載圖片</a></li> 
-							<li><a href="./04高實用性設計/007響應式網頁/index.html">007響應式網頁</a></li> 
-						</ul> 
-					</li> 
-				</ul>
-			</div>
+<!doctype html>
+<html lang="en">
 
-			<div id="contents">
-				<img src="images/img.jpg" />
-				<h1>來源書籍</h1>
-				<p><h2 align="center">接案我最行！jQuery商業範例必殺技</h2></p>
-			</div>
-		</div>
-		<div id="footer">
-			<div id="footer-inner">Copyright © 2014 MdN Department All Right Reserved.</div>
-		</div>
-	</body>
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/zi.css">
+</head>
+
+<body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src=" https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "
+        crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js " integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh "
+        crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js " integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ "
+        crossorigin="anonymous "></script>
+    <div class="index_head">
+        <h2 class="title">諮商網頁</h2>
+    </div>
+    <div class="index_body">
+        <a href="intro.html">
+            <div class="top_block intro" style="background-color:#50a6f7;">
+                課程簡介
+            </div>
+        </a>
+        <a href="content.html">
+            <div class="top_block content" style="background-color:#74308d;">
+                課程內容
+            </div>
+        </a>
+        <a href="compare.html">
+            <div class="top_block compare" style="background-color:#f7ca18;">
+                課後比較
+            </div>
+        </a>
+        <a href="board.html">
+            <div class="bot_block board" style="background-color:#e94957;">
+                留言板
+            </div>
+        </a>
+        <a href="resouse.html">
+            <div class="bot_block resource" style="background-color:#76748b;">
+                課外資源
+            </div>
+        </a>
+    </div>
+</body>
+
 </html>
