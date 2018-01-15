@@ -122,3 +122,8 @@
   text-align: center;
   color: white;
 }
+
+.content_bottom_text {
+  font-size: 300%;
+  text-align: center;
+}
