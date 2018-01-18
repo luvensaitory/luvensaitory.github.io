@@ -1,11 +1,16 @@
 .index_body {
   width: 100%;
-  height: 1000px;
+  height: 600px;
 }
 
 .index_head {
   width: 100%;
   height: 150px;
+}
+
+.team {
+  width: 100%;
+  height: 800px;
 }
 
 .title {
@@ -22,6 +27,42 @@
   width: 100%;
   height: 5400px;
   background-size: cover;
+}
+
+.team_div {
+  float: left;
+  font-size: 300%;
+  padding-top: 180px;
+  padding-left: 75px;
+}
+
+.picture {
+  width: 100%;
+  padding-top: 50%;
+  overflow: hidden;
+}
+
+.idea_title {
+  margin-left: 10%;
+  font-size: 400%;
+  margin-top: 370px;
+  position: absolute;
+}
+
+.idea {
+  margin-top: 400px;
+  font-size: 120%;
+  margin-left: 25%;
+  margin-right: 8%;
+  position: absolute;
+}
+
+.team_img {
+  float: left;
+  margin-left: 7%;
+  margin-right: 5%;
+  margin-top: 100px;
+  border-radius: 15px;
 }
 
 .title_img {
@@ -108,6 +149,10 @@
   font-size: 200%;
   text-align: center;
   float: top;
+  color: white;
+}
+
+a {
   color: white;
 }
 
