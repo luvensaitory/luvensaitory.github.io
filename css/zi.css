@@ -1,6 +1,6 @@
 .index_body {
   width: 100%;
-  height: 1500px;
+  height: 1000px;
 }
 
 .index_head {
@@ -40,51 +40,20 @@
   margin-right: 20px;
 }
 
-.intro {
-  margin-left: 7%;
-  margin-right: 1%;
-}
-
-.content {
-  margin-left: 1%;
-  margin-right: 1%;
-}
-
-.compare {
-  margin-left: 1%;
-  margin-right: 7%;
+.block {
+  margin-left: 5%;
+  margin-right: 3%;
 }
 
 .top_block {
-  width: 27%;
+  width: 24%;
   height: 220px;
-  margin-top: 75px;
+  margin-top: 100px;
   float: left;
   border-color: rgba(255, 255, 255, .75);
   border-width: 3px;
   border-style: solid;
-  border-radius: 20px;
-}
-
-.bot_block {
-  width: 27%;
-  height: 220px;
-  margin-top: 25px;
-  float: left;
-  border-color: rgba(255, 255, 255, .75);
-  border-width: 3px;
-  border-style: solid;
-  border-radius: 20px;
-}
-
-.board {
-  margin-left: 21%;
-  margin-right: 1%;
-}
-
-.resource {
-  margin-left: 1%;
-  margin-right: 20%;
+  border-radius: 25px;
 }
 
 .index_image {
